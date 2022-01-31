@@ -1,0 +1,35 @@
+2022-01-28 14:47:26,322 __main__ - INFO:Namespace(datain='/home/waashk/instanceselection/resources/datasets', dataset='aisopos_ntua_2L', filename='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L//saida_cnn', folds=10, inputdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/tfidf/', method='cnn', out='/home/waashk/instanceselection/resources/outsel', outputdir='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L/', save=True, splitdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/', start_time='28-01-2022 14:47:26')
+2022-01-28 14:47:26,323 __main__ - INFO:Fold 0
+2022-01-28 14:47:26,329 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:27,038 __main__ - INFO:Result: 
+2022-01-28 14:47:27,038 __main__ - INFO:Fold 1
+2022-01-28 14:47:27,044 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:27,817 __main__ - INFO:Result: 
+2022-01-28 14:47:27,817 __main__ - INFO:Fold 2
+2022-01-28 14:47:27,824 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:28,615 __main__ - INFO:Result: 
+2022-01-28 14:47:28,615 __main__ - INFO:Fold 3
+2022-01-28 14:47:28,621 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:29,353 __main__ - INFO:Result: 
+2022-01-28 14:47:29,353 __main__ - INFO:Fold 4
+2022-01-28 14:47:29,359 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:30,106 __main__ - INFO:Result: 
+2022-01-28 14:47:30,106 __main__ - INFO:Fold 5
+2022-01-28 14:47:30,114 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:30,827 __main__ - INFO:Result: 
+2022-01-28 14:47:30,827 __main__ - INFO:Fold 6
+2022-01-28 14:47:30,833 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:31,501 __main__ - INFO:Result: 
+2022-01-28 14:47:31,501 __main__ - INFO:Fold 7
+2022-01-28 14:47:31,506 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:32,320 __main__ - INFO:Result: 
+2022-01-28 14:47:32,320 __main__ - INFO:Fold 8
+2022-01-28 14:47:32,326 __main__ - DEBUG:Total instances number: Counter({1.0: 143, -1.0: 107})
+2022-01-28 14:47:33,035 __main__ - INFO:Result: 
+2022-01-28 14:47:33,035 __main__ - INFO:Fold 9
+2022-01-28 14:47:33,042 __main__ - DEBUG:Total instances number: Counter({1.0: 144, -1.0: 108})
+2022-01-28 14:47:33,662 __main__ - INFO:Result: 
+2022-01-28 14:47:33,662 __main__ - INFO:time: 0.7279072523117065
+2022-01-28 14:47:33,662 __main__ - INFO:time std: 0.05467978213373413
+2022-01-28 14:47:33,662 __main__ - INFO:reducion: 0.43727936507936505
+2022-01-28 14:47:33,662 __main__ - INFO:reducion std: 0.02264314305562817

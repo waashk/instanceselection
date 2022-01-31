@@ -1,0 +1,13 @@
+cnn
+Namespace(datain='/home/waashk/instanceselection/resources/datasets', dataset='aisopos_ntua_2L', filename='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L//saida_cnn', folds=10, inputdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/tfidf/', method='cnn', out='/home/waashk/instanceselection/resources/outsel', outputdir='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L/', save=True, splitdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/', start_time='28-01-2022 14:47:26')
+times: [0.7091827392578125, 0.7732915878295898, 0.7915096282958984, 0.7320499420166016, 0.7470850944519043, 0.7139017581939697, 0.6683294773101807, 0.8139383792877197, 0.7094416618347168, 0.6203422546386719]
+
+				reducion: [0.464, 0.42, 0.468, 0.44, 0.408, 0.448, 0.42, 0.444, 0.46, 0.4007936507936508]
+
+				time mean: 0.7279072523117065
+
+				reducion mean: 0.43727936507936505
+
+				reduced_len_mean: 140.8
+
+				original_len_mean: 250.2
