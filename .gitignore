@@ -1,0 +1,5 @@
+__pycache__
+resources/pretrained_models
+settings/isenv
+settings/dbenv
+resources/outsel
