@@ -12,12 +12,10 @@ cd instanceselection/settings/
 bash setup-isenv.sh
 ```
 
-## Activating environment
+## Installing Activating environment
 
 ```
-git clone https://github.com/waashk/instanceselection.git
-cd instanceselection/settings/
-bash setup-isenv.sh
+source isenv/bin/activate
 ```
 
 ### Requirements
