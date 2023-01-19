@@ -7,7 +7,7 @@ out="$ATCISELWORKDIR/resources/outsel"
 mkdir -p $out
 
 datasets=(aisopos_ntua_2L)
-methods=(cnn) # enn icf lssm lsbo ldis cdis xldis drop3 psdsp) 
+methods=(cnn enn icf lssm lsbo ldis cdis xldis drop3 psdsp ib3 cis egdis) 
 
 for d in ${datasets[@]};
 do
