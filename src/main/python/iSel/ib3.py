@@ -59,7 +59,7 @@ class IB3(InstanceSelectionMixin):
     def select_data(self, X, y):
 
         X, y = check_X_y(X, y, accept_sparse="csr")
-
+        #y = y.astype('int')
 
         PDMatrix = pairwise_distances(X=X, metric='euclidean')
 
@@ -80,6 +80,8 @@ class IB3(InstanceSelectionMixin):
         CD = []
 
 
+
+
         xidx_random_list = list(range(X.shape[0]))
         random.shuffle(xidx_random_list)
 
@@ -88,7 +90,7 @@ class IB3(InstanceSelectionMixin):
             if len(CD) == 0:
                 CD.append(xidx)
                 self.mask[xidx] = True
-
+                print(xidx, y[xidx])
                 freqClass[xidx][y[xidx]]+=1
             
                 recordClass[xidx][0] +=1

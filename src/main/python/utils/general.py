@@ -9,6 +9,7 @@ from os import path
 import copy
 import pickle
 import gzip
+from sklearn.preprocessing import LabelEncoder
 
 def print_stats(folds, micro_list, macro_list):
     #print(micro_list)
@@ -45,6 +46,10 @@ def get_data(inputdir, f):
             inputdir+"train"+str(f)+".gz", dtype=np.float64, n_features=X_test.shape[1])
 
     n_classes = int(max(np.max(y_train), np.max(y_test)))+1
+
+    le = LabelEncoder().fit(y_train)
+    y_train = le.transform(y_train)
+    y_test = le.transform(y_test)
 
     return X_train, y_train, X_test, y_test, n_classes
 

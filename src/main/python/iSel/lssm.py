@@ -36,12 +36,8 @@ class LSSm(InstanceSelectionMixin):
 		self.sample_indices_ = []
 
 	def setMinEnemyDist(self,y):
-		# mindist_ne = distancia até primeira instancia de outra classe
 		self.mindist_ne = np.zeros(y.size)
-		# ne = idx of nearest enemy
 		self.ne = np.zeros(y.size) 
-		#Para cada instancia, setamos a menor distancia até intancia de outra classe
-		#for i in range(len(self.S)):
 		for i in self.S:
 			self.mindist_ne[i] = np.inf
 			for j in self.S:
@@ -61,8 +57,6 @@ class LSSm(InstanceSelectionMixin):
 				if x != j and self.isLessThanMinEnemyDist(x,j): 
 					self.ls[x].add(j)
 
-	# se i está no raio de idx
-	# parece muito cover
 	def getu(self, x):
 		lenu = 0
 		for i in self.S:
@@ -79,32 +73,16 @@ class LSSm(InstanceSelectionMixin):
 
 		#randomize
 		self.S = list(range(len(y)))
-		#self.S = random.sample(self.S, len(self.S))
 
-		# mask contem os elementos escolhidos, inicialmente todos são True
 		self.mask = np.zeros(y.size, dtype=bool)                #mask = mascars
 		
-		#Calculando o LS
-		# primeiro calculamos os pares de distancias
 		self.pairwise_distances = euclidean_distances(X)
 
-		# Seta a distancia de cada instancia ao inimigo mais proximo
 		self.setMinEnemyDist(y)
 
 		# Set LS
 		self.ls = [set() for i in self.S]
 		self.setLs()
-
-		#print(self.ls[0])
-		#self.getu(0)
-
-		#exit()
-
-		# getting LS = rechable
-		#coverage = np.zeros(y.size) #ls = rechable
-		#for x in self.S:
-		#	coverage[x] = self.getCoverage(x)
-		#	#rechable[x] = self.getRecheable(x)
 
 		u = np.zeros(y.size)
 		h = np.zeros(y.size)
@@ -115,16 +93,10 @@ class LSSm(InstanceSelectionMixin):
 		for x in self.S:
 			if u[x] >= h[x]:
 				self.mask[x] = True
-		#print(rechable[0:50])
 
 		self.X_ = np.asarray(X[self.mask])
 		self.y_ = np.asarray(y[self.mask])
 		print(X[self.mask].shape)
-		#self.sample_indices_ = list(sorted(np.asarray(self.S)[self.mask]))
 		self.sample_indices_ = list(sorted(np.where(self.mask == True)[0]))
-	   
-		#print(sorted(idx_prots_s))
-		#print(float(len(self.y_))/len(y))
-
 		self.reduction_ = 1.0 - float(len(self.y_))/len(y)
 		return self.X_, self.y_

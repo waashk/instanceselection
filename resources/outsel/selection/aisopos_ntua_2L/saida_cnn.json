@@ -1,5 +1,5 @@
 {
-    "hiperparams": "Namespace(datain='/home/waashk/instanceselection/resources/datasets', dataset='aisopos_ntua_2L', end_time='19-01-2023 17:32:47', filename='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L//saida_cnn', folds=10, inputdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/tfidf/', inputrep='tfidf', method='cnn', out='/home/waashk/instanceselection/resources/outsel', outputdir='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L/', overwrite=0, save=True, splitdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/splits/', start_time='19-01-2023 17:32:40')",
+    "hiperparams": "Namespace(datain='/home/waashk/instanceselection/resources/datasets', dataset='aisopos_ntua_2L', end_time='19-01-2023 18:10:30', filename='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L//saida_cnn', folds=10, inputdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/tfidf/', inputrep='tfidf', method='cnn', out='/home/waashk/instanceselection/resources/outsel', outputdir='/home/waashk/instanceselection/resources/outsel/selection/aisopos_ntua_2L/', overwrite=0, save=True, splitdir='/home/waashk/instanceselection/resources/datasets/aisopos_ntua_2L/splits/', start_time='19-01-2023 18:10:23')",
     "dataset": "aisopos_ntua_2L",
     "method": "cnn",
     "info": {
@@ -16,16 +16,16 @@
             0.4007936507936508
         ],
         "time_for_reduce": [
-            0.7079546451568604,
-            0.6876707077026367,
-            0.6975841522216797,
-            0.6764605045318604,
-            0.6603305339813232,
-            0.7404403686523438,
-            0.6635372638702393,
-            0.8257224559783936,
-            0.7023074626922607,
-            0.5674159526824951
+            0.7531278133392334,
+            0.720574140548706,
+            0.733649730682373,
+            0.7173929214477539,
+            0.718895435333252,
+            0.7671136856079102,
+            0.6635851860046387,
+            0.8137810230255127,
+            0.72188401222229,
+            0.6088106632232666
         ],
         "original_len": [
             250,
@@ -51,7 +51,7 @@
             135,
             151
         ],
-        "time_mean": 0.6929424047470093,
+        "time_mean": 0.7218814611434936,
         "reduction_mean": 0.43727936507936505,
         "reduced_len_mean": 140.8,
         "original_len_mean": 250.2
