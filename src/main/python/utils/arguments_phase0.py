@@ -28,16 +28,17 @@ def arguments():
     parser.add_argument('--folds', type=int, default=10)
     parser.add_argument(
         '--save', type=lambda x: bool(str2bool(x)), default=True)
+    parser.add_argument("--inputrep", type=str, default="tfidf")
     parser.add_argument("--out", required=True)
     parser.add_argument("--datain", required=True)
-    
+    parser.add_argument("--overwrite", default=0)
 
     args = parser.parse_args()
 
     # args.inputdir=f'datasets/{args.dataset}/tfidf/'
-    args.inputdir = f'{args.datain}/{args.dataset}/tfidf/'
+    args.inputdir = f'{args.datain}/{args.dataset}/{args.inputrep}/'
     # args.splitdir=f'datasets/{args.dataset}/'
-    args.splitdir = f'{args.datain}/{args.dataset}/'
+    args.splitdir = f'{args.datain}/{args.dataset}/splits/'
     # args.outputdir=f'outselection2/{args.dataset}/'
     args.outputdir = f'{args.out}/selection/{args.dataset}/'
 

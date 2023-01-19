@@ -6,6 +6,9 @@ import io
 from sklearn.datasets import load_svmlight_file, dump_svmlight_file
 import argparse
 from os import path
+import copy
+import pickle
+import gzip
 
 def print_stats(folds, micro_list, macro_list):
     #print(micro_list)
@@ -107,3 +110,45 @@ def load_splits_ids_for_is(args, DATAIN):
 
 		splits.append( (train_index, test_index) )
 	return splits
+
+def get_splits(splits_filename):
+
+    with open(splits_filename, "rb") as splits_file:
+        return pickle.load(splits_file)
+
+
+def checkpoint_splits(splits_df, filename):
+
+    with open(filename, "wb") as split_file:
+        pickle.dump(splits_df, split_file)
+
+
+
+def translate_train_idxinfold(is_splits, old_splits):
+
+    splits_to_save_translated = copy.copy(is_splits)
+
+    nfolds = splits_to_save_translated.shape[0]
+    
+    for f in range(nfolds):
+        old_train_idxs = old_splits.loc[f].train_idxs
+        new_train_idxs = is_splits.loc[f].train_idxs
+
+        train_index = [old_train_idxs[t] for t in new_train_idxs]
+
+        splits_to_save_translated.loc[f].train_idxs = train_index
+
+    return splits_to_save_translated
+
+
+
+def load_splits_ids(folddir):
+    splits = []
+    with open(folddir, encoding='utf8', errors='ignore') as fileout:
+        for line in fileout.readlines():
+            train_index, test_index = line.split(';')
+            train_index = list(map(int, train_index.split()))
+            test_index = list(map(int, test_index.split()))
+            splits.append((train_index, test_index))
+    
+    return splits
