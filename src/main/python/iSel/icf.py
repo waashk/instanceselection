@@ -38,9 +38,7 @@ class ICF(InstanceSelectionMixin):
 
     """
 
-    def __init__(self, args, fold, n_neighbors=3):
-        self.fold = fold
-        self.outputdir = args.outputdir
+    def __init__(self, n_neighbors=3):
         self.n_neighbors = n_neighbors
         self.classifier = None
         self.sample_indices_ = []

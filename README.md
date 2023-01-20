@@ -32,6 +32,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 python run_generateSplit.py -d <dataset> -m <ismethod> --datain <data_directory> --out <output_directory>;
 ```
 
+or run the following jupyter notebook:
+
+```
+example.ipynb
+```
+
 ## Supported Instance Selection Methods
 
 The supported Instance Selection Methods are:
