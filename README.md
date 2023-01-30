@@ -111,17 +111,14 @@ The outputs of the run_generateSplit.py script are:
 ## Citation
 
 ```
-@article{cunha23,
-title = {A Comparative Survey of Instance Selection Methods applied to NonNeural and Transformer-Based Text Classification},
-journal = {ACM Computing Surveys - CSUR},
-volume = {xx},
-number = {xx},
-pages = {xxxx},
-year = {2023},
-issn = {0360-0300},
-doi = {https://doi.org/xxxxxx},
-url = {https://xxxxx},
-author = {Washington Cunha and Felipe Viegas and Celso França and Thierson Rosa and Leonardo Rocha and Marcos André Gonçalves}
+@article{cunha2023csur,
+  title={A Comparative Survey of Instance Selection Methods applied to NonNeural and Transformer-Based Text Classification},
+  author={Cunha, Washington and Viegas, Felipe and Fran{\c{c}}a, Celso and Rosa, Thierson and Rocha, Leonardo and Gon{\c{c}}alves, Marcos Andr{\'e}},
+  journal={ACM Computing Surveys},
+  year={2023},
+  publisher={ACM New York, NY},
+  issn = {0360-0300},
+  doi = {https://dl.acm.org/doi/10.1145/3582000},
 }
 ```
 
